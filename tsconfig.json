@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                          // Hỗ trợ async/await, promise
+    "module": "commonjs",                        // Cho Node.js
+    "rootDir": "./src",                          // Thư mục chứa mã nguồn
+    "outDir": "./dist",                          // Thư mục chứa mã build
+    "strict": true,                              // Bật kiểm tra chặt chẽ
+    "esModuleInterop": true,                     // Hỗ trợ import các thư viện CommonJS
+    "forceConsistentCasingInFileNames": true,    // Ép thống nhất chữ hoa/thường
+    "skipLibCheck": true                         // Bỏ kiểm tra types trong node_modules
+  },
+  "include": ["src"],                            // Chỉ biên dịch các file trong src/
+  "exclude": ["node_modules", "dist"]            // Bỏ qua các thư mục này
+}
